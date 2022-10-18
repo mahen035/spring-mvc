@@ -11,5 +11,10 @@
 <a href="${pageContext.request.contextPath}/getUser?userId=123">get user details</a><br><br>
 
 <a href="${pageContext.request.contextPath}/getName/Mark">get user details</a>
+
+	<form action="${pageContext.request.contextPath}/save" method="post">
+		UserName: <input type="text" name ="uname" id ="uname"/> <br>
+		<input type="submit" value="Submit">
+	</form>
 </body>
 </html>

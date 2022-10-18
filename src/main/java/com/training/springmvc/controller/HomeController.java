@@ -44,5 +44,17 @@ public class HomeController {
 		return "username";
 		
 	}
+	
+	@RequestMapping(value="save" ,method=RequestMethod.POST)
+	public String save(Model map, HttpServletRequest request) {
+		User user = new User();
+		String userName= request.getParameter("uname");
+		user.setUserName(userName);
+		
+		service.save(user);
+		map.addAttribute("userText", "User data saved Successfully");
+		return "username";
+		
+	}
 
 }

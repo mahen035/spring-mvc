@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>${name}</h1>
+<h1>${userText}</h1>
 </body>
 </html>
